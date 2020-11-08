@@ -1,0 +1,358 @@
+/* BsSearch */
+/* import { FaBeer } from 'react-icons/fa'; */
+/* <FaBeer /> */
+/* @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  line-height: 1.5;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+}
+ul,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+}
+.common-btn{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background-color: #141313;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid #141313;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.common-btn:hover{
+  background: transparent;
+  color: #141313;
+}
+
+input[type='text']{
+  padding: 20px 20px;
+  font-size: 20px;
+}
+
+
+/* ====  Common Css End Here =====  */
+
+/* Nav start  */
+.nav{
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 30px;
+}
+.nav .logo{
+   -ms-flex: 0 0 15%;
+   flex: 0 0 15%;
+   max-width: 15%;
+}
+.nav .logo h1{
+ font-size: 40px;
+ font-weight: 700;
+ font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.nav .menu-item{
+  -ms-flex: 0 0 85%;
+  flex: 0 0 85%;
+  max-width: 85%;
+}
+.nav .menu-item ul{
+  display: flex;
+  justify-content: flex-end;
+  line-height: 60px;
+}
+.nav .menu-item ul li a{
+  margin: 0 20px;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #141313;
+}
+
+/* nav End */
+.banner{
+   -ms-flex: 0 0 100%;
+   flex: 0 0 100%;
+   max-width: 100%;
+   background-image: url('../src/images/banner.jpg');
+   background-size: cover;
+   background-position: left top;
+   background-repeat: no-repeat;
+   padding: 100px 0;
+   position: relative;
+   z-index: 1;
+}
+.banner::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+}
+.banner .banner__txt{
+  width: 50%;
+}
+.banner .banner__txt h2{
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.banner .banner__txt p{
+  font-size: 18px;
+  font-weight: 400;
+  color: #f8f8f8;
+}
+
+/*  banner Part end  */
+
+/* Experience Start  */
+.experience{
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 70px 0;
+}
+.experience__header{
+  margin-bottom: 40px;
+}
+.experience__header h3{
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #141313;
+}
+.experience__header p{
+  font-size: 18px;
+  font-weight: 400;
+  color: #1f1c1c;
+}
+.experience__card_item {
+   -ms-flex: 0 0 33.33%;
+   flex: 0 0 33.33%;
+   max-width: 33.33%;
+   padding-right: 15px;
+
+}
+.experience__card_item h3{
+  font-size: 24px;
+  font-weight: 700;
+  color: #141313;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.experience__card_item p{
+  font-size: 18px;
+  font-weight: 400;
+  color: #1f1c1c;
+  margin-bottom: 20px;
+}
+.experience__card_item button{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background-color: #141313;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid #141313;
+  transition: 0.3s;
+}
+.experience__card_item button:hover{
+  background: transparent;
+  color: #141313;
+  cursor: pointer;
+}
+
+/* Brands Start  */
+.brands{
+  background-image: url('../src/images/brand-banner.jpg');
+}
+.brand__header h3{
+  color: #fff;
+}
+.brand__header p{
+  color: #f8f8f8;
+}
+.brands .brands__logos{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   text-align: center;
+   margin-top: 100px;
+   justify-items: center;
+}
+.brands .brands__logos img{
+  width: 80px;
+}
+
+/* Stories */
+.stories__blog{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.stories__blog-card img{
+  height: 300px;
+  width: 600px;
+}
+.blog-card-title h3{
+  font-size: 20px;
+  color: #141313;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.blog-card-title p{
+  font-size: 16px;
+  color: #1f1c1c;
+  font-weight: 400;
+}
+/* Learn Start  */
+.learn{
+  max-width: 100%;
+  padding: 25px 0;
+  background-image: linear-gradient(to left, rgb(11, 168, 189), rgb(36, 36, 240));
+}
+.learn__text{
+  text-align: center;
+}
+.learn__text h5{
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.learn__text button{
+ border: none;
+ outline: none;
+ padding: 10px 20px;
+ background-color: #e6dada;
+ color: #141313;
+ font-size: 18px;
+ font-weight: 700;
+ border: 1px solid #e6dada;
+ transition: 0.3s;
+}
+.learn__text button:hover{
+   background: transparent;
+   color: #fff;
+   cursor: pointer;
+}
+
+/* Footer Start  */
+.footer{
+  padding: 40px 0;
+  background-color: #141313;
+  max-width: 100%;
+}
+.footer-text{
+  text-align: center;
+}
+.footer-logo{
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'M PLUS Rounded 1c',
+  sans-serif;
+  color: #fff;
+}
+.footer-text h3{
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.footer-text h4{
+  font-size: 16px;
+  font-weight: 700;
+  color: #e6d9d9;
+  text-transform: uppercase;
+}
+ /* Image upload */
+.multiImage{
+  width: 100%;
+  padding: 50px 0;
+  border-top: 1px solid #141313;
+}
+.multiImage-upload{
+  text-align: center;
+}
+.multiImage-upload h2{
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #141313;
+  margin-bottom: 20px;
+}
+.result{
+  margin-top: 100px;
+  min-height: 100%;
+  max-height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+.result img{
+  width: 320px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 40px;
+  border: 1px solid #141313;
+  padding: 10px;
+  background-color: #f8f8f8;
+  position: relative;
+}
+.single-img{
+  position: relative;
+}
+.single-img svg{
+  position: absolute;
+  right: 75px;
+  top: 20px;
+  cursor: pointer;
+  background-color: red;
+  color: #fff!important;
+}
+
+/* Tshirt part */
+.tshirt{
+  border-top: 1px solid #141313;
+  width: 100%;
+   padding: 50px 0;
+}
+.modal-form{
+  margin-top: 20px;
+}
